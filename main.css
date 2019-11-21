@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  background: #f3f3f3; }
+  background: #f3f3f3;
+  font-family: 'helvetica', sans-serif; }
 
 .app {
   width: 100vw;
@@ -11,17 +12,16 @@ body {
 
 .calc {
   height: 250px;
-  width: 300px;
+  width: 500px;
   border-radius: 16px 16px 16px 16px;
-  box-shadow: 0px 2px 10px gray; }
+  box-shadow: 0px 2px 10px gray;
+  text-align: center; }
   .calc__display {
     background: #c4c4c4;
-    padding: 0px 15px;
-    height: 50px;
+    padding: 1px 15px;
     color: #313131;
-    text-align: right;
-    border-radius: 16px 16px 0px 0px;
-    line-height: 60px; }
+    text-align: center;
+    border-radius: 16px 16px 0px 0px; }
   .calc__actions {
     background: #171717;
     display: flex;
