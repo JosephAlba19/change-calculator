@@ -2,9 +2,6 @@ body {
     margin: 0;
     background: #f3f3f3;
     font-family: 'helvetica', sans-serif;
-}
-
-.app {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -12,37 +9,44 @@ body {
     align-items: center;
 }
 
+
 .calc {
     height:250px;
-    width: 500px;
+    width: 700px;
     border-radius: 16px 16px 16px 16px;
     box-shadow: 0px 2px 10px gray;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
-    &__display {
-        background: #c4c4c4;
-        padding: 1px 15px;
-        // height: 50px;
+    .calcDisplay {
+        background: #313131;
         color: #313131;
-        text-align: center;
-        border-radius: 16px 16px 0px 0px;
-        // line-height: 60px;
-    }
-
-    &__actions {
-        background: #171717;
-        display: flex;
-        flex-wrap: wrap;
-        border-radius: 0px 0px 16px 16px;
-        padding: 15px 0px;
-
-        button {
-            width: calc((100% / 3) - 30px);
-            height: 35px;
-            -webkit-appearance: none;
+        width: 100%;
+        height: 70%;
+        border-radius: 0 0 16px 16px;
+        display: flex;    
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        input[type=text] {
+            height: 30px;
+            border-radius: 5px;
             outline: none;
-            border: none;
-            margin: 5px 15px;
+            font-size: 14px;
+            padding: 0;
+            margin: 0;
+        }
+        button {
+            height: 35px;
+            width: 80px;
+            border-radius: 5px;
+            outline: none;
         }
     }
 }
+
+
+
